@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        nav#sidebar {
+            background-color: #343a40;
+            color: #fff;
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            padding-top: 30px;
+        }
+
+        nav#sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav#sidebar ul li {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        nav#sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav#sidebar ul li a:hover {
+            background-color: #ff6347; /* Tomato color */
+        }
+
+        main {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .stat-card {
+            background-color: #ff6347; /* Tomato color */
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .stat-card h3 {
+            margin: 0;
+        }
+
+        .stat-card p {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .report-card {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .report-card a {
+            color: #ff6347;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .report-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#stats">Statistics</a></li>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Dashboard Content -->
+    <main>
+        <!-- Overview Section -->
+        <section id="overview">
+            <h2>Dashboard Overview</h2>
+            <p>Welcome to your dashboard. Here you can see key metrics and reports.</p>
+        </section>
+
+        <!-- Statistics Section -->
+        <section id="stats">
+            <h2>Statistics</h2>
+            <div class="stat-card">
+                <h3>Users</h3>
+                <p>1,200 active users</p>
+            </div>
+            <div class="stat-card">
+                <h3>Sales</h3>
+                <p>$15,000 in sales</p>
+            </div>
+            <div class="stat-card">
+                <h3>Traffic</h3>
+                <p>10,000 monthly visitors</p>
+            </div>
+        </section>
+
+        <!-- Reports Section -->
+        <section id="reports">
+            <h2>Reports</h2>
+            <p>View detailed reports for the current month, including sales, user behavior, and more.</p>
+            <div class="report-card">
+                <h3>Sales Report</h3>
+                <p>View detailed sales data for this period.</p>
+                <a href="#">View Report</a>
+            </div>
+            <div class="report-card">
+                <h3>User Activity</h3>
+                <p>See detailed insights on user activity.</p>
+                <a href="#">View Report</a>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings">
+            <h2>Settings</h2>
+            <form>
+                <label for="timezone">Timezone:</label>
+                <select id="timezone" name="timezone">
+                    <option value="utc">UTC</option>
+                    <option value="pst">PST</option>
+                    <option value="est">EST</option>
+                </select>
+                <br>
+                <label for="notifications">Enable Notifications:</label>
+                <input type="checkbox" id="notifications" name="notifications">
+                <br>
+                <button type="submit">Save Settings</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Dashboard Company | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
