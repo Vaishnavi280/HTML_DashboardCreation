@@ -1,5 +1,5 @@
 # HTML_DashboardCreation
-HTML code used to develop dashboards for stakeholder management to track track crucial metrics, statistics of the sales
+HTML code used to develop dashboards for stakeholder management to track crucial metrics, statistics of the sales
 1. Centralized Data Visualization
 Purpose: Dashboards aggregate and display key data from different sources in a centralized interface.
 Benefit: This helps stakeholders see relevant metrics in one place rather than sifting through multiple reports or systems. It saves time and provides a unified view of the organization’s performance.
